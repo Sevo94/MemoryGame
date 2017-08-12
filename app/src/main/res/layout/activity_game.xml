@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightGreen"
+    android:gravity="center"
+    tools:context="com.example.admin.memorytraining.activities.GameActivity">
+
+    <include
+        android:id="@+id/game_finish_layout"
+        layout="@layout/game_finish_layout"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/overlay_view"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:layout_centerInParent="true"
+        android:background="@color/lightRedColor2"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="35sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/back_btn"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_marginEnd="12dp"
+                android:background="@drawable/rectangle_red_shape"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/back"
+                    android:textColor="@color/white" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/continue_btn"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:background="@drawable/rectangle_red_shape"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/cont"
+                    android:textColor="@color/white" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/game_mode_linear_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone"
+        tools:context="com.example.admin.memorytraining.activities.GameActivity">
+
+        <TextView
+            android:id="@+id/timer_tv"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/lightRedColor"
+            android:textSize="20sp"
+            android:typeface="serif" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="5"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <include
+                android:id="@+id/row1"
+                layout="@layout/circles_linear_layout"
+                android:visibility="visible" />
+
+            <include
+                android:id="@+id/row2"
+                layout="@layout/circles_linear_layout"
+                android:visibility="visible" />
+
+            <include
+                android:id="@+id/row3"
+                layout="@layout/circles_linear_layout"
+                android:visibility="visible" />
+
+            <include
+                android:id="@+id/row4"
+                layout="@layout/circles_linear_layout"
+                android:visibility="visible" />
+
+            <include
+                android:id="@+id/row5"
+                layout="@layout/circles_linear_layout"
+                android:visibility="visible" />
+
+            <include
+                android:id="@+id/row6"
+                layout="@layout/circles_linear_layout"
+                android:visibility="visible" />
+
+            <!--<include-->
+            <!--android:id="@+id/row7"-->
+            <!--layout="@layout/circles_linear_layout"-->
+            <!--android:visibility="visible" />-->
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>
