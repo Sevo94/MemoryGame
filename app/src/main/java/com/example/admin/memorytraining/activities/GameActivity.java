@@ -2,6 +2,7 @@ package com.example.admin.memorytraining.activities;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.View;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
@@ -261,5 +262,8 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
     private void showGameEndLayout() {
         gameEndLayout.setVisibility(View.VISIBLE);
         gameModeLayout.setVisibility(View.GONE);
+
+        Log.d("", "");
     }
+
 }
