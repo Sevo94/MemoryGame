@@ -264,6 +264,8 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
         gameModeLayout.setVisibility(View.GONE);
 
         Log.d("", "");
+
+        Log.v("Sevag", "");
     }
 
 }
